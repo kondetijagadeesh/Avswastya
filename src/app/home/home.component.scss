@@ -1,0 +1,58 @@
+ .background-shape {
+  position: absolute; 
+  background: radial-gradient(circle at top left, #aef1f9 10%, transparent 20%);
+  border-bottom-right-radius: 100%;
+  z-index: -1;
+}
+.split-section {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 40px; /* You can reduce this */
+  gap: 20px; 
+}
+.left-text {
+// flex: 1;
+  width: 60%;
+ padding: 40px;
+}
+
+.right-image {
+      width: 60%;
+      min-height: 60vh;
+      background-image: url("https://www.shutterstock.com/image-photo/portrait-handsome-male-doctor-stethoscope-600nw-2480850611.jpg"); /* Replace with your image path */
+     background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+    }
+    .color1 {
+  color: cadetblue; 
+  
+}
+
+.home1 {
+  
+  padding-left: 0;
+}
+
+.text-secondary{
+  color: black;
+  width: 50%;
+  padding-left: 40px;
+ // margin: auto;
+}
+    
+    @media (max-width: 768px) {
+      .split-section {
+        flex-direction: column;
+      }
+      .left-text, .right-image {
+        width: 100%;
+        height: 50vh;
+      }
+
+     
+    }
+
+   
